@@ -6,7 +6,8 @@
 }
 .navbar
 {
-    padding: 20px;
+    padding: 0px;
+
     height: 80px;
     background-color: #e6f4ea;
 }
@@ -41,6 +42,21 @@ header .search
     border: 3px solid green;
     outline: none;
     padding: 10px;
+}
+@media (max-width:992px)
+{
+    .navbar-collapse
+    {
+        background-color: rosybrown;
+        border-radius:8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar-collapse a
+    {
+        color:#e6f4ea;
+    }
 }
 header .btn0
 {
