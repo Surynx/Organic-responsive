@@ -157,6 +157,19 @@ header .btn0
 }
 footer
 {
-    height: 8vh;
+    height: 40vh;
     background-color: #e6f4ea;
+}
+@media (max-width:1000px)
+{
+    footer
+    {
+        height: auto;
+    }
+}
+footer h4
+{
+    font-size: 1.5rem;
+    color:black;
+    font-family: 'Pacifico', cursive;
 }
