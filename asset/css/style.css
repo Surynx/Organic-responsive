@@ -69,8 +69,9 @@ header .btn0
 }
 .sec-1 {
     position: relative; 
-    height: 90vh;
+    height: 65vh;
     overflow: hidden;
+    box-shadow: 2px 2px 10px #e6f4ea;
 }
 
 .sec-1 img {
@@ -152,15 +153,22 @@ header .btn0
         object-fit: contain; 
     }
 }
+.product .card
+{
+    transition: box-shadow 0.15s;
+}
 .product .card:hover
 {
    box-shadow: -3px -3px 36px -3px rgba(0,0,0,0.74);
 -webkit-box-shadow: -3px -3px 36px -3px rgba(0,0,0,0.74);
 -moz-box-shadow: -3px -3px 36px -3px rgba(0,0,0,0.74);
 }
+.society .col-lg-4 ,img
+{
+    transition: transform 0.15s;
+}
 .society .col-lg-4:hover img {
   transform: scale(1.05);
-  transition: transform 0.15s;
 }
 .carousel {
   max-height: 400px;
@@ -188,4 +196,11 @@ footer h4
     font-size: 1.5rem;
     color:black;
     font-family: 'Pacifico', cursive;
+}
+#store .col-lg-3
+{
+    transition: transform 0.15s;
+}
+#store .col-lg-3:hover{
+    transform: scale(1.05);
 }
