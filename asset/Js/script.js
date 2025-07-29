@@ -4,6 +4,9 @@ let username=document.getElementById("username")
 let email=document.getElementById("Email")
 let regex_mail=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/
 
+//message
+let mess=document.getElementById("message")
+
 function validation()
 {
     let flag=true
@@ -20,6 +23,11 @@ function validation()
     else if(!regex_mail.test(email.value.trim()))
     {
         alert("⚠️Invalid Mail Address")
+        flag=false
+    }
+    else if(mess.value.trim()=="")
+    {
+        alert("⚠️ Message cannot be blank")
         flag=false
     }
     return flag
