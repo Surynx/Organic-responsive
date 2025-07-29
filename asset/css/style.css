@@ -21,10 +21,11 @@
     color:black;
     font-family: 'Pacifico', cursive;
     outline: none;
+    margin-left: 7vw;
 }
-.navbar-brand
+.navbar-brand:hover
 {
-    color: black;
+    color: green;
 }
 .nav-link
 {
@@ -56,6 +57,10 @@ header .search
     .navbar-collapse a
     {
         color:#e6f4ea;
+    }
+    header .search,.btn0
+    {
+        margin-bottom: 3vh;
     }
 }
 header .btn0
