@@ -33,3 +33,12 @@ function validation()
     return flag
 }
 
+//hover
+let r=document.getElementById("rotate")
+let o=document.getElementById("org")
+
+function namechange()
+{
+    o.innerHTML="Know more"
+}
+r.addEventListener("mouseover",namechange)

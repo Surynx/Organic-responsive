@@ -84,67 +84,19 @@ header .btn0
     width: 100%;
     object-fit: cover;
 }
-.sec-1 h1
+.sec-1 .container-fluid
 {
     position: absolute;
     top: 20vh;
-    left: 12vw;
-    font-size: 6vh;
-    font-family: 'Poppins', sans-serif;
-    font-weight:600vw;
-}
-.sec-1 h3
-{
-    position: absolute;
-    top: 29vh;
     left: 20vw;
-    font-size: 6vh;
-    font-family: 'Poppins', sans-serif;
-    font-weight:bold;
 }
-@media (max-width:1376px)
+@media (max-width:648px)
 {
-    .sec-1 h1
+    .sec-1 .container-fluid
     {
-    left: 8vw;
-    font-size: 3.5vh;
-    font-family: 'Poppins', sans-serif;
-    font-weight:600;
-    font-style: italic;
+        top: 15vh;
+        left: 5vw;
     }
-    .sec-1 h3
-    {
-    top: 24vh;
-    left: 18vw;
-    font-size: 3.5vh;
-    font-family: 'Poppins', sans-serif;
-    font-weight:600;
-    font-style: italic;
-    }
-}
-@media (max-width:530px)
-{
-    .sec-1 h1
-    {
-    font-size: 2vh;
-    }
-    .sec-1 h3
-    {
-    font-size: 2vh;
-    }
-}
-.sec-1 button
-{
-    position: absolute;
-    top:45vh;
-    left:25vw
-}
-@media (max-width:1376px)
-{
-   .sec-1 button{
-        top:30vh;
-    }
-    
 }
 .sec-2 img
 {
@@ -208,4 +160,22 @@ footer h4
 }
 #store .col-lg-3:hover{
     transform: scale(1.05);
+}
+#rotate
+{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 20px;
+    background-color: green;
+    color: #e6f4ea;
+    transition-property: transform,background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0.15s;
+    font-family: 'Pacifico', cursive;
+}
+#rotate:hover
+{
+    transform: rotate(180deg);
+    background-color: red;
 }
